@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Counter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h2 id="number">0</h2>
-    <button id="increase">+1</button>
-    <button id="decrease">-1</button>
+    <form id="signup-form">
+        <h2>회원가입</h2>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+        <div id="name-error" class="error-message"></div>
 
-    <script>
-        const increaseBtn = document.getElementById("increase");
-        const decreaseBtn = document.getElementById("decrease");
+        <label for="email">이메일</label>
+        <input type="email" id="email">
+        <div id="email-error" class="error-message"></div>
 
-        increaseBtn.addEventListener("click", function() {
-            console.log("increase가 클릭됨");
-        });
+        <label for="age">나이</label>
+        <input type="number" id="age">
+        <div id="age-error" class="error-message"></div>
 
-        decreaseBtn.addEventListener("click", function() {
-            console.log("decrease가 클릭됨");
-        });
-    </script>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password">
+        <div id="password-error" class="error-message"></div>
+
+        <label for="confirm-password">비밀번호 확인</label>
+        <input type="password" id="confirm-password">
+        <div id="confirm-password-error" class="error-message"></div>
+        
+        <input type="submit" value="가입하기">
+    </form>
+
+    <script src="script.js"></script>
 </body>
-</html
+</html>

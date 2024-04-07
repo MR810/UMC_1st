@@ -1,35 +1,50 @@
+h2 {
+    text-align: center;
+}
 body {
-    font-family: sans-serif;
-  }
-  
-  .modalShell {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    background-color: #a6cede;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-  
-  .modal {
-    background: #fff;
-    padding: 30px 20px;
-    border-radius: 5px;
-    width: 300px;
-  }
-  
-  .modalTitle {
-    font-size: 30px;
-    font-weight: bold ;
-  }
-  
-  .modal p {
-    font-size: 15px ;
-  }
-  
-  .closeModal {
-    text-align: right ;
-  }
+    align-items: center;
+    height: 100vh;
+}
+form {
+    background-color: #d1e7f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #d1e7f0;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #616161;
+    color: white;
+    padding: 10px 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: #616161;
+}
