@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>modal</title>
-    <meta charset="UTF-8" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+    <h2 id="number">0</h2>
+    <button id="increase">+1</button>
+    <button id="decrease">-1</button>
 
-  <body>
-    <h1>안녕하세요!</h1>
-    <p>내용내용내용..</p>
-    <button id="open">버튼 열기</button>
-    <div class="modalShell" style="display: none;">
-      <div class="modal">
-        <div class="modalTitle">안녕하세요</div>
-        <p>모달 내용은 어쩌고 저쩌고..</p>
-        <div class="closeModal">
-          <button id="close">닫기</button>
-        </div>
-      </div>
-    </div>
-    <script src="src/index.js"></script>
-  </body>
-</html>
+    <script>
+        const increaseBtn = document.getElementById("increase");
+        const decreaseBtn = document.getElementById("decrease");
+
+        increaseBtn.addEventListener("click", function() {
+            console.log("increase가 클릭됨");
+        });
+
+        decreaseBtn.addEventListener("click", function() {
+            console.log("decrease가 클릭됨");
+        });
+    </script>
+</body>
+</html
